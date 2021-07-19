@@ -4,11 +4,15 @@
   <head>
     <meta charset="utf-8">
     <!--Go google "normalize css to see what this does!"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Mono:wght@300&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <!--Link to our stylesheet-->
     <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <title>My test page</title>
+    <title>Beverly Kwok</title>
   </head>
 
   <body class="page">
@@ -16,8 +20,10 @@
     <header class="page__header">
       <nav class="nav">
         <ol class="nav__list">
-          <li class="nav__list-item">About</li>
-          <li class="nav__list-item">Experience</li>
+          <li class="nav__list-item"><a href="#about">About</a></li>
+          <li class="nav__list-item"><a href="#experience">Experience</a></li>
+          <li class="nav__list-item"><a href="https://bevkwok.github.io/portfolio/" target="_blank">Work</a></li>
+          <li class="nav__list-item"><a href="mailto: yan.kwok.b@gamil.com" target="_blank">Contact</a></li>
         </ol>
       </nav>
     </header>
@@ -27,7 +33,18 @@
 
       <!---Left column (will be small sidebar)--->
       <div class="left-content">
-        This will become the left column. You will put links to your Github, LinkedIn, etc here.
+        <a href="https://www.linkedin.com/in/yan-yee-beverly-kwok" target="_blank">
+          <i class="composition__icon composition__icon--i3 fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/bevkwok" target="_blank">
+            <i class="composition__icon composition__icon--i2 fab fa-github"></i>
+        </a>
+        <a href="#" onclick="window.open('resume_yan_yee_kwok.pdf', '_blank', 'fullscreen=yes'); return false;">
+            <i class="composition__icon composition__icon--i1 far fa-file-alt"></i>
+        </a>
+        <a href="mailto: yan.kwok.b@gamil.com" target="_blank">
+            <i class="composition__icon composition__icon--i4 fas fa-envelope"></i>
+        </a>
       </div>
 
       <!---Center column (will be page hero and content sections) --->
@@ -35,31 +52,33 @@
         <section id="hero" class="main-content__section">
           <div>
             <div>
-              <h1 class="big-heading">My Name Here</h1>
-              <h2>And what I do.</h2>
+              <h1 class="big-heading">Beverly Kwok.</h1>
+              <h2 class="small-heading">I love building things and coding.</h2>
             </div>
-            <p>Here is where I will briefly describe myself.</p>
-            <div>
-              <a>Get in Touch</a>
+            <p>I am a software engineer with a background in the medical field. I started to learn coding since March 2020 because of the challenging and exciting aspects of software development. I am a fast learner and able to pick up new programming languages quickly. I love how front-end development allows me to be creative while back-end development sharpens my problem solving skill.</p>
+            <div class="div-button">
+              <a href="mailto:yan.kwok.b@gmail.com" class="button">Get in Touch</a>
             </div>
         </section>
         <section id="about" class="main-content__section">
           <h2 class="section-heading">
             About Me
           </h2>
-          <p>Here is where I talk more about myself.</p>
+          <p>
+            I am a fast learner and able to pick up new programming languages quickly. I love how front-end development allows me to be creative while back-end development sharpens my problem solving skill. </p>
         </section>
         <section id="experience" class="main-content__section">
           <h2 class="section-heading">
             Experience
           </h2>
-          <p>Here is where I talk about my experience.</p>
+          <p>I graduated from an immersive coding bootcamp and have spent over 1000+ hours learning full-stack web development. I have created project using C#, Python and JavaScript. I also have experience using several popular frameworks such as Django, .Net, and Entity.</p>
         </section>
       </main>
 
       <!---Right column (will be empty space)--->
       <div class="right-content">
-        This will become the right column. Leave this blank, or add something similar to the example website.
+        Check out my another portfolio <br>
+        <a href="https://bevkwok.github.io/portfolio/">https://bevkwok.github.io/portfolio/</a>
       </div>
     </div>
   </body>

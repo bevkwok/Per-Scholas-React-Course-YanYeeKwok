@@ -1,25 +1,99 @@
+/* 
+font-family: 'Anton', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+
+color: #0e1a27;
+color: #333456;
+color: #595B83;
+color: #9DDFD3;
+color: #DBF6E9;
+*/
+
+* {
+  background-color: #0e1a27;
+  color: #DBF6E9;
+}
+
 h1 {
   margin: 0;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  padding: 0.5rem 0rem;
+  letter-spacing: 0.1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #9DDFD3;
+}
+
+a:hover {
+  color: #595B83;;
+}
+
 .big-heading {
-  font-family: Verdana;
+  font-family: 'Anton', sans-serif;
+  font-size: 5rem;
+  color: #DBF6E9;
+  letter-spacing: 1rem;
+}
+
+.small-heading{
+  font-family: 'Anton', sans-serif;
+  color: #9DDFD3;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+}
+
+.div-button {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: none;
+  padding: 1rem;
+  border: solid 1px #DBF6E9;
 }
 
 .section-heading {
   /* Add your own font here */
+  font-family: 'Anton', sans-serif;
+  color: #DBF6E9;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  margin: 1rem 0rem;
+  padding: 0.5rem 0rem;
 }
 
 .nav__list {
-
+  font-family: 'Roboto Mono', monospace;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0rem;
+  padding: 1rem;
+  background-color: #333456;
 }
 
 .nav__list_item {
-
+  background-color: #333456;
 }
 
-.page {
+li.nav__list-item {
+  padding: 10px 60px;
+  background-color: #333456;
+  color: #9DDFD3;
+}
 
+
+.page {
+  display: flex;
+  flex-direction: column;
 }
 
 .page__header {
@@ -28,23 +102,39 @@ h1 {
 }
 .page__content {
   background-color: beige;
-
+  display: flex;
 }
 
 .left-content {
-  background-color: burlywood;
+  background-color: #595B83;
+  width: 150px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 
+.composition__icon {
+  font-size: 2rem;
+  padding: 3rem 0rem;
+  background-color: #595B83;
 }
 
 .right-content {
-  background-color: burlywood;
+  background-color: #595B83;
+  width: 150px;
+  padding: 1rem;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: 'Roboto Mono', monospace;
+  list-style-type: none;
 }
 
 .main-content {
-
+  padding: 2rem;
 }
 
 .main-content__section {
-  background-color: cornsilk;
-
+  background-color: #595B83;
 }
